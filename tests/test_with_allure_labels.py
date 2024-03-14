@@ -2,6 +2,7 @@ import allure
 from allure_commons.types import Severity
 from selene import browser, by, be
 
+
 @allure.tag('web')
 @allure.label('owner', 'irinavoron')
 @allure.severity(Severity.CRITICAL)
@@ -31,5 +32,3 @@ def test_github_with_allure_step():
 
     with allure.step('Check issue with "homework" in the title'):
         browser.element(by.partial_text('homework')).should(be.visible)
-
-
