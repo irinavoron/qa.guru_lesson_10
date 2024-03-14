@@ -2,7 +2,7 @@ import allure
 from selene import browser, by, be
 
 
-def test_github_with_allure_steps():
+def test_github_with_allure_step():
     with allure.step('Open main page'):
         browser.open('/')
 
